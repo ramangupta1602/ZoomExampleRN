@@ -158,9 +158,9 @@ public class ZoomManager extends ReactContextBaseJavaModule  implements ZoomSDKI
 
         JoinMeetingParams params = new JoinMeetingParams();
 
-        params.displayName = "Zelhus";
-        params.meetingNo = "98776736089";
-        params.password = "OTFmQ2YyZUp0dkNMR3BwYlF3RVYydz09";
+        params.displayName = displayName;
+        params.meetingNo = meetingNumber;
+        params.password = password;
         try {
             int joinMeetingResult = meetingService.joinMeetingWithParams(this.reactContext, params,opts);
             Log.i(this.getName(), "joinMeeting, joinMeetingResult=" + joinMeetingResult);
